@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Busca Cep</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .conteudo img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body class="container bg-light">
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-dark">
+                <h3 style="color: white">Busca Endereço</h3>           
+            </div>
+            <div class="card-body">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input class="form-control" type="text" name="nome" id="nome">
+                        <label for="cep">Cep</label>
+                        <input class="form-control" type="text" name="cep" id="cep">
+                        <input type="submit" class="btn btn-outline-info mt-2" value="Buscar">
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
